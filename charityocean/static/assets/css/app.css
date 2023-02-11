@@ -1,0 +1,76 @@
+body {
+  background-color: #4f6a7a !important;
+  font-family: cursive !important;
+}
+
+#flagtitle {
+  margin: 3px 0 7px 0;
+  font-size: 18px;
+  color: #eeeeee;
+  text-align: center;
+}
+#flag {
+  margin: 0px !important;
+}
+
+hr {
+  background: #03afff;
+  height: 3.2px !important;
+  border-radius: 50px;
+}
+
+.card-body {
+  padding: 0px 13px 28px 28px !important;
+}
+
+img {
+  border-radius: 8%;
+}
+
+a {
+  color: #88b494 !important;
+  padding: 2px;
+  font-size: 16px !important;
+}
+
+::placeholder {
+  color: white !important;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: white !important;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: white !important;
+}
+
+input[type="text"],
+select.form-control {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+  color: white;
+}
+
+input[type="text"]:focus,
+select.form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: transparent;
+  color: white;
+}
+
+.panel {
+  border-right: 1.7px solid #03afff;
+  border-left: 1.7px solid #03afff;
+  border-radius: 50px;
+  margin-bottom: 15px;
+  padding: 22px 22px 0px 22px;
+}

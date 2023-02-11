@@ -5,46 +5,31 @@
 
 {% block content %}
 
-
-<div class="card shadow-sm" style="  background-color: lightgrey;
-width: 300px;
-border: 3px solid rgb(0, 0, 0);
-padding: 50px;
-margin: 20px;">
-    
-    
-      
-      <img src="{% static 'assets/img/flags/tr.svg'%}" alt="Andorra" flag="" width="100%" height="100%">
-    <div class="card-body">
-      <div class="card-text" style="width: 90px;
-      border: 1px solid rgb(0, 0, 0);
-      padding: 3px;
-      margin: 0px;">
-        <h7>Andorra</h7>
-      </div>
-
-      <a href ="https://google.com">this is a link </a>
-        <a:link {
-            text-decoration: none;
-          }
-          
-          a:visited {
-            text-decoration: none;
-          }
-          
-          a:hover {
-            text-decoration: underline;
-          }
-          
-          a:active {
-            text-decoration: underline;
-          }
-          >
-      
-      </div>
+<div class="container">
+    <div class="col-xl-12 row">
+        {% for i in '01234567891011121314151617'|make_list %}
+        <div class="col-xl-3 col-md-4 col-sm-6 p-2">
+            <div class="panel">
+                <div id="flag">
+                    <img src="{% static 'assets/img/flags/ad.svg'%}" alt="Andorra" flag="" width="100%" height="100%">
+                    <div id="flagtitle">Andorra</div>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <a href="https://ahbap.org" target="_blank">• Ahbap</a>
+                    </div>
+                    <div class="row">
+                        <a href="https://ahbap.org" target="_blank">• Ahbap</a>
+                    </div>
+                    <div class="row">
+                        <a href="https://ahbap.org" target="_blank">• Ahbap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
     </div>
-
-  </div>
+</div>
 
 
 {% endblock%}
